@@ -83,6 +83,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
 .title-container::before{
     content: "";
     width: 1600px;
