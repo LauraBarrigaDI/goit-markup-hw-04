@@ -20,8 +20,8 @@
   <body>
     <!-- Encabezado de la página -->
     <header>
-      <div class="container nav-container">
-        <nav>
+      <div class="container">
+        <nav class="nav-container">
           <!-- Navegación a otros sitios -->
           <a class="logo" href="/">WebStudio</a>
           <a class="active-link" href="index.html">Estudio</a>
@@ -29,10 +29,18 @@
           <a class="active-link" href="">Contactos</a>
         </nav>
 
-        <a class="contact-link" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="contact-link" href="tel:+525555296000">+52 55 5529 6000</a>
+        <div class="contact-container">
+          <svg class="icon" width="16" height="16">
+            <use href="./images/symbol-defs.svg#icon-mail"></use>
+          </svg>
+          <a class="contact-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <svg class="icon" width="10" height="16">
+            <use href="./images/symbol-defs.svg#icon-cel"></use>
+          </svg>
+          <a class="contact-link" href="tel:+525555296000">+52 55 5529 6000</a>
+        </div>
       </div>
     </header>
 
@@ -158,17 +166,64 @@
     <!-- Pie de página -->
     <footer class="footer-container">
       <div class="container">
-        <a class="logo" href="/">WebStudio</a>
-        <address class="add">
-          <p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
-          <a class="footer-contact-link" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <a class="footer-contact-link" href="tel:+525555296000"
-            >+52 55 5529 6000</a
-          >
-        </address>
-        <p class="social-media">Encuéntrenos en</p>
+        <div class="footer-container1">
+          <a class="logo" href="/">WebStudio</a>
+          <address class="add">
+            Calz. Ticomán 500, Ciudad de México, CDMX, México
+              <a class="footer-contact-link" href="mailto:info@example.com"
+                >info@example.com</a>
+              <a class="footer-contact-link" href="tel:+525555296000"
+                >+52 55 5529 6000</a
+              >
+          </address>
+        </div>
+        <div class="footer-container2">
+          <p class="social-media">Encuéntrenos en</p>
+          <a href="/">
+            <svg class="icon-footer" width="44" height="44">
+              <use
+                href="./images/symbol-defs.svg#icon-instagram"
+                width="20"
+                height="20"
+                x="12"
+                y="12"
+              ></use>
+            </svg>
+          </a>
+          <a href="/">
+            <svg class="icon-footer" width="44" height="44">
+              <use
+                href="./images/symbol-defs.svg#icon-twiter"
+                width="20"
+                height="20"
+                x="12"
+                y="12"
+              ></use>
+            </svg>
+          </a>
+          <a href="/">
+            <svg class="icon-footer" width="44" height="44">
+              <use
+                href="./images/symbol-defs.svg#icon-facebook"
+                width="20"
+                height="20"
+                x="12"
+                y="12"
+              ></use>
+            </svg>
+          </a>
+          <a href="/">
+            <svg class="icon-footer" width="44" height="44">
+              <use
+                href="./images/symbol-defs.svg#icon-linkedin"
+                width="20"
+                height="20"
+                x="12"
+                y="12"
+              ></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
