@@ -75,25 +75,35 @@ body{
 
 /* Contenido único de la página*/
 
-.container-fluid {
-    height: 600px;
-    background-image: url(./images/fondo1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-.title-container {
+.title-container{
     display: flex; 
     height: 600px;
-    box-sizing: border-box;
     margin-bottom: 82px;
-    background-color:rgba(47, 48, 58, 0.4);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-     
 }
+.title-container::before{
+    content: "";
+    width: 1600px;
+    height: 600px;
+    position: absolute;
+    background-image: url(fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.title-container::after{
+    content: "";
+    width: 1600px;
+    height: 600px;
+    position: absolute;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    z-index: -1;
+}
+
 .h1-title{
     color: #FFFFFF;
     font-size: 44px;
@@ -114,7 +124,6 @@ body{
     line-height: 1.9;
     font-weight: 700;
     cursor: pointer;
-    
 }
 
 /*Valores de la compañía*/
@@ -130,6 +139,7 @@ body{
 
 .icon-benefits {
     display: inline-flex;
+    margin-top: 90px;
     justify-content: center;
     background: #F5F4FA;
     border-radius: 4px;
@@ -165,10 +175,37 @@ body{
     padding-bottom: 50px;
 }
 
-.devices-images{
+.devices{
     display: flex;
     padding-bottom: 94px;
     justify-content: space-between;
+    flex-direction: row;
+    position: relative; 
+}
+.devices-images{
+    position: relative; 
+}
+
+.devices-images::before{
+    content: "";
+    width: 370px;
+    height: 100%;
+    position: absolute;
+    background:linear-gradient(transparent 75%,rgba(47, 48, 58, 0.8)75%,rgba(47, 48, 58, 0.8)99%, transparent 99%);
+}
+
+.text-images{
+    width: 370px;
+    height: 294px;
+}
+
+.text{
+    position: absolute;
+    bottom: 15px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 90px;
 }
 
 /*Nuestro Equipo*/
@@ -263,11 +300,9 @@ body{
 .footer-container1{
     display: inline-flex;
     height: 252px;
-    padding-top: 60px;
     padding-left: 20px;
     background-color: #2F303A;
     flex-direction:column;
-   
 }
 
 .add{
