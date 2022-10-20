@@ -47,15 +47,13 @@ body{
     justify-content: flex-end; 
     align-items: flex-start;
 }
+
 .icon{
     display: inline-flex;
     margin-right: 10px;
     fill: #757575;
 }
 
-.icon:hover{
-    fill:#2196F3;
-}
 .contact-link{
     color: #212121;
     margin-right: 30px;
@@ -67,6 +65,10 @@ body{
 
 .contact-link:hover{
     color: #2196F3;
+}
+
+.contact-link:hover .icon{
+    fill: #2196F3;
 }
 
 /*--------------------*/
